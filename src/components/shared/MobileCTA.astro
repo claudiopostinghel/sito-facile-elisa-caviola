@@ -1,0 +1,44 @@
+---
+import { business } from '../../data/business.js';
+---
+
+<div class="mobile-cta">
+  <a href={business.whatsapp} target="_blank" rel="noopener" class="mobile-cta__btn">
+    Scrivimi su WhatsApp
+  </a>
+</div>
+
+<style>
+  .mobile-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    padding: 12px 16px;
+    padding-bottom: max(12px, env(safe-area-inset-bottom));
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(0,0,0,0.08);
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .mobile-cta { display: block; }
+  }
+
+  .mobile-cta__btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: #25D366;
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    text-decoration: none;
+    min-height: 44px;
+  }
+</style>

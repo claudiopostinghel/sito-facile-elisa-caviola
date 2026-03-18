@@ -1,0 +1,288 @@
+---
+import { Image } from 'astro:assets';
+import { business } from '../../data/business.js';
+import heroImg from '../../assets/images/elisa-decoration.png';
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-image-wrap">
+      <div class="image-shadow"></div>
+      <div class="hero-image">
+        <div class="image-frame">
+          <Image src={heroImg} alt="Elisa Caviola — Graphic Designer" width={720} quality={85} />
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-text">
+      <p class="eyebrow">Graphic Designer &middot; Trento</p>
+      <h1 class="headline">
+        Dal segno<br />alla <em>materia</em>
+      </h1>
+      <p class="subtitle">Packaging &middot; Brand Identity<br class="tablet-break" /> &middot; Fotografia Creativa</p>
+
+      <div class="hero-ctas">
+        <a href="#portfolio" class="btn-primary">Vedi i progetti</a>
+        <a href="#contatto" class="btn-outline">Contattami</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    --surface: #FDFCFE;
+    --surface-alt: #F6F2FA;
+    --primary-500: #6D3B7E;
+    --primary-600: #5A2E68;
+    --primary-900: #2A1538;
+    --accent: #9B6BB5;
+    --accent-dark: #7D519A;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Karla', system-ui, sans-serif;
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    position: relative;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    background: var(--surface);
+    overflow: hidden;
+    padding: 5rem 2.5rem 4rem;
+  }
+
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    gap: 5rem;
+    align-items: center;
+    width: 100%;
+  }
+
+  .hero-image-wrap {
+    position: relative;
+  }
+
+  .hero-image {
+    position: relative;
+  }
+
+  .image-frame :global(img) {
+    width: 100%;
+    max-height: 80vh;
+    object-fit: contain;
+    display: block;
+  }
+
+  .image-shadow {
+    display: none;
+  }
+
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .eyebrow {
+    font-family: var(--font-body);
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--primary-500);
+  }
+
+  .headline {
+    font-family: var(--font-display);
+    font-weight: 300;
+    font-size: clamp(2.8rem, 5.5vw, 5rem);
+    line-height: 1.02;
+    color: var(--primary-500);
+    letter-spacing: -0.03em;
+  }
+
+  .headline em {
+    font-style: italic;
+    font-weight: 500;
+    color: var(--primary-500);
+  }
+
+  .subtitle {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: #7A6B85;
+    letter-spacing: 0.02em;
+    line-height: 1.6;
+  }
+
+  .hero-ctas {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: white;
+    background: var(--primary-500);
+    padding: 0.9rem 2.2rem;
+    border-radius: 40px;
+    transition: background-color 0.3s ease, transform 0.4s var(--ease-bounce), box-shadow 0.3s ease;
+    box-shadow: 0 4px 16px rgba(109, 59, 126, 0.25);
+    letter-spacing: 0.02em;
+  }
+
+  .btn-primary:hover {
+    background: var(--primary-600);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(109, 59, 126, 0.35);
+  }
+
+  .btn-outline {
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--primary-500);
+    background: transparent;
+    border: 2px solid var(--primary-500);
+    padding: 0.8rem 2.2rem;
+    border-radius: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.4s var(--ease-bounce);
+    letter-spacing: 0.02em;
+  }
+
+  .btn-outline:hover {
+    background: var(--primary-500);
+    color: white;
+    transform: translateY(-3px);
+  }
+
+  .tablet-break {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .hero {
+      padding: 5rem 1rem 3rem;
+    }
+
+    .hero-inner {
+      grid-template-columns: 1fr 50vw;
+      gap: 1rem;
+    }
+
+    .hero-text {
+      order: 1;
+      gap: 0.75rem;
+    }
+
+    .hero-image-wrap {
+      order: 2;
+      margin-right: -1rem;
+    }
+
+    .image-frame :global(img) {
+      max-height: none;
+      transform: scaleX(-1);
+    }
+
+    .tablet-break {
+      display: inline;
+    }
+
+    .eyebrow {
+      font-size: 0.7rem;
+    }
+
+    .headline {
+      font-size: clamp(1.8rem, 5.5vw, 2.8rem);
+    }
+
+    .subtitle {
+      font-size: 0.85rem;
+    }
+
+    .hero-ctas {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+
+    .btn-primary,
+    .btn-outline {
+      font-size: 0.75rem;
+      padding: 0.6rem 1.3rem;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero {
+      padding-left: 0;
+    }
+
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .hero-text {
+      order: 2;
+      padding-left: 1rem;
+    }
+
+    .hero-image-wrap {
+      order: 1;
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .image-frame :global(img) {
+      transform: none;
+      max-height: 60vh;
+      object-position: left;
+    }
+
+    .tablet-break {
+      display: none;
+    }
+
+    .hero-ctas {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .headline {
+      font-size: clamp(2.2rem, 10vw, 3.5rem);
+    }
+
+    .eyebrow {
+      font-size: 0.8rem;
+    }
+
+    .subtitle {
+      font-size: 1rem;
+    }
+
+    .btn-primary,
+    .btn-outline {
+      font-size: 0.85rem;
+      padding: 0.8rem 1.8rem;
+    }
+  }
+</style>

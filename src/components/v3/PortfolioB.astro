@@ -1,0 +1,349 @@
+---
+import { business } from '../../data/business.js';
+import { Image } from 'astro:assets';
+
+import teatroPoster from '../../assets/images/teatro-poster-01.jpeg';
+import teatroBanner from '../../assets/images/teatro-banner.jpeg';
+import teatroLogo from '../../assets/images/teatro-logo.jpg';
+import teatroPoster02 from '../../assets/images/teatro-poster-02.jpg';
+import africanMango from '../../assets/images/african-spirit-mockup-02.jpeg';
+import africanMockup from '../../assets/images/african-spirit-mockup-01.jpeg';
+import africanMockup04 from '../../assets/images/african-spirit-mockup-04.jpg';
+import zeitgeist01 from '../../assets/images/zeitgeist-01.jpeg';
+import zeitgeist02 from '../../assets/images/zeitgeist-02.jpeg';
+import valdicembra01 from '../../assets/images/valdicembra-01.jpeg';
+import valdicembraMockup from '../../assets/images/valdicembra-mockup.jpeg';
+import infusion01 from '../../assets/images/infusion-01.jpeg';
+import infusion02 from '../../assets/images/infusion-02.jpeg';
+import monogramma01 from '../../assets/images/monogramma-01.jpeg';
+import monogramma02 from '../../assets/images/monogramma-02.jpeg';
+import trofeo03 from '../../assets/images/trofeo-3d-03.jpg';
+import trofeo04 from '../../assets/images/trofeo-3d-04.jpg';
+import caramelle02 from '../../assets/images/caramelle-3d-02.jpg';
+
+const chapters = [
+  {
+    num: 'I',
+    project: business.progetti[0],
+    images: [valdicembraMockup, teatroPoster, teatroBanner, teatroLogo],
+    narrative: 'Il primo grande progetto di brand identity. Un teatro storico che aveva bisogno di una voce visiva nuova, capace di onorare la tradizione e parlare al presente. Poster, stendardi, segnaletica interna, badge staff: ogni elemento racconta la stessa storia.',
+  },
+  {
+    num: 'II',
+    project: business.progetti[1],
+    images: [africanMockup, africanMango, africanMockup04],
+    narrative: 'Il cioccolato Forastero dall\'Africa, tre origini, tre sapori. Ogni confezione è un viaggio: carta Fedrigoni Constellation Snow, colori caldi, etichette trilingue. Il packaging come narrazione sensoriale.',
+  },
+  {
+    num: 'III',
+    project: business.progetti[2],
+    images: [zeitgeist01, zeitgeist02],
+    narrative: 'Un progetto intimo e coraggioso. Nature morte contemporanee che parlano di dipendenze, di ciò che consumiamo e che ci consuma. Lo spirito del tempo catturato attraverso la lente di una fotografa che osserva senza giudicare.',
+  },
+  {
+    num: 'IV',
+    project: business.progetti[3],
+    images: [monogramma01, monogramma02],
+    narrative: 'Le colline terrazzate della Val di Cembra, i vigneti, la strada che serpeggia tra i paesi. Un logotipo che doveva funzionare su un sito web come su un cartello stradale. Semplicità e territorio.',
+  },
+  {
+    num: 'V',
+    project: business.progetti[5],
+    images: [infusion01, infusion02],
+    narrative: 'Ridisegnare il packaging di un prodotto esistente significa rispettarne l\'anima e dargli nuova vita. Una fustella quadrata, un target parafarmaceutico, la malva come protagonista silenziosa.',
+  },
+  {
+    num: 'VI',
+    project: business.progetti[8],
+    images: [],
+    videos: ['/videos/aereo.mp4'],
+    narrative: 'Il movimento aggiunge una dimensione in più al racconto visivo. Animazioni realizzate con After Effects e Nuke, dove ogni frame è pensato per catturare l\'attenzione e comunicare con fluidità.',
+  },
+  {
+    num: 'VII',
+    project: business.progetti[6],
+    images: [trofeo03, trofeo04],
+    narrative: 'Un trofeo per una gara sportiva di ginnastica artistica. Due versioni, due materiali, la stessa eleganza: vetro, metallo e marmo modellati in Blender per un premio che si desidera vincere.',
+  },
+  {
+    num: 'VIII',
+    project: business.progetti[7],
+    images: [],
+    videos: ['/videos/lime.mp4'],
+    narrative: 'Il gusto che diventa forma. Lettere gommose, frutta traslucida, colori che esplodono: un marchio di caramelle dove il 3D racconta la dolcezza prima ancora di assaggiarla.',
+  },
+];
+
+const pullQuotes = [
+  'La grafica non è decorazione. È il modo in cui un\'idea diventa visibile.',
+  'Ogni progetto è un incontro. Con un brand, con una storia, con qualcuno che ha bisogno di essere visto.',
+  'Il dettaglio non è un dettaglio. È il progetto.',
+  'Comunicare bene è un atto di rispetto verso chi guarda.',
+  'Non esiste buon design senza ascolto.',
+];
+
+---
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Lora:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap" rel="stylesheet" />
+
+<section id="portfolio">
+  <div class="section-header reveal">
+    <div class="thread-line"></div>
+    <h2>Portfolio</h2>
+    <p class="section-subtitle">Otto progetti, otto storie. Il filo rosso che li unisce è la cura per il dettaglio e la passione per il racconto visivo.</p>
+  </div>
+
+  {chapters.map((ch, i) => (
+    <article class="chapter">
+      <div class="chapter-left">
+        <div class="chapter-sticky">
+          <div class="chapter-info">
+            <span class="chapter-cat">{ch.project.categoria} &middot; {ch.project.anno}</span>
+            <h3 class="chapter-title">{ch.project.titolo}</h3>
+            <span class="chapter-num">{ch.num}</span>
+            <p class="chapter-narrative">{ch.narrative}</p>
+          </div>
+          {i < chapters.length - 1 && i < pullQuotes.length && (
+            <blockquote class="pull-quote">
+              <span class="quote-mark">&ldquo;</span>
+              <p>{pullQuotes[i]}</p>
+            </blockquote>
+          )}
+        </div>
+      </div>
+      <div class="chapter-images">
+        {ch.images.map((img, idx) => (
+          <div class="img-wrap">
+            <Image
+              src={img}
+              alt={`${ch.project.titolo} — immagine ${idx + 1}`}
+              width={560}
+              quality={80}
+              format="webp"
+            />
+          </div>
+        ))}
+        {ch.videos?.map(v => (
+          <div class="video-wrap">
+            <video autoplay loop muted playsinline>
+              <source src={v} type="video/mp4" />
+            </video>
+          </div>
+        ))}
+      </div>
+    </article>
+  ))}
+</section>
+
+<style>
+  #portfolio {
+    background: #F9F7FB;
+    padding: 7rem 0 8rem;
+  }
+
+  .section-header {
+    max-width: 1440px;
+    margin: 0 auto 6rem;
+    padding: 0 2.5rem;
+    text-align: center;
+  }
+
+  .thread-line {
+    width: 2px;
+    height: 60px;
+    background: #6D3B7E;
+    margin: 0 auto 2rem;
+  }
+
+  .section-header h2 {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 700;
+    font-size: clamp(2.2rem, 5vw, 3.5rem);
+    color: #6D3B7E;
+    margin: 0 0 1.5rem;
+  }
+
+  .section-subtitle {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #2A1538;
+    opacity: 0.55;
+    max-width: 55ch;
+    margin: 0 auto;
+  }
+
+  .chapter {
+    max-width: 1440px;
+    margin: 0 auto 6rem;
+    padding: 6rem 2.5rem 0;
+    border-top: 1px solid rgba(42, 21, 56, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+    min-height: 100vh;
+  }
+
+  .chapter-left {
+    position: relative;
+    align-self: stretch;
+  }
+
+  .chapter-sticky {
+    position: sticky;
+    top: calc(6rem + 12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: calc(100vh - 12rem);
+  }
+
+  .chapter-info {
+    position: relative;
+  }
+
+  .chapter-cat {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 0.8rem;
+    color: #6D3B7E;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+
+  .chapter-title {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-weight: 500;
+    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    color: #6D3B7E;
+    margin: 0 0 1.25rem;
+    line-height: 1.15;
+  }
+
+  .chapter-num {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 8rem;
+    color: #6D3B7E;
+    line-height: 1;
+    opacity: 0.07;
+    position: absolute;
+    top: -1.5rem;
+    left: -0.5rem;
+    z-index: -1;
+    pointer-events: none;
+    user-select: none;
+  }
+
+  .chapter-narrative {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #2A1538;
+    max-width: 55ch;
+    margin: 0 0 2rem;
+  }
+
+  .chapter-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+    max-width: 80%;
+    margin-left: auto;
+  }
+
+  .img-wrap {
+    position: relative;
+  }
+
+  .img-wrap :global(img) {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+  .video-wrap {
+  }
+
+  .video-wrap video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+    object-fit: cover;
+  }
+
+
+  .pull-quote {
+    position: relative;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    border: none;
+    background: rgba(109, 59, 126, 0.04);
+    border-radius: 8px;
+  }
+
+  .quote-mark {
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 8rem;
+    color: #6D3B7E;
+    line-height: 1;
+    opacity: 0.10;
+    position: absolute;
+    top: -2.5rem;
+    left: -1rem;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .pull-quote p {
+    position: relative;
+    z-index: 1;
+    font-family: 'Playfair Display', Georgia, serif;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.8;
+    color: #3D2150;
+    max-width: 55ch;
+    margin: 0;
+  }
+
+
+  @media (max-width: 768px) {
+    .chapter {
+      grid-template-columns: 1fr;
+      padding: 3rem 1.25rem 0;
+      gap: 2rem;
+    }
+
+    .chapter-sticky {
+      position: static;
+      min-height: auto;
+      gap: 0;
+    }
+
+    .chapter-images {
+      max-width: 100%;
+      margin-left: 0;
+    }
+
+    .chapter-num {
+      font-size: 5rem;
+      top: -1rem;
+    }
+
+    .chapter-title {
+      font-size: 1.3rem;
+    }
+
+    .section-header {
+      padding: 0 1.25rem;
+    }
+  }
+</style>

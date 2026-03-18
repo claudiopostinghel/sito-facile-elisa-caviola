@@ -1,0 +1,48 @@
+---
+import '../styles/global.css';
+import { business } from '../data/business.js';
+
+interface Props {
+  title?: string;
+  description?: string;
+  variant?: string;
+}
+
+const {
+  title = `${business.nome} — ${business.ruolo} · ${business.citta}`,
+  description = business.descrizione,
+} = Astro.props;
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": business.nome,
+  "description": business.descrizione,
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": business.citta,
+    "addressCountry": "IT",
+  },
+  "telephone": business.tel,
+};
+---
+
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+</head>
+<body>
+  <slot />
+  <script src="../scripts/animations.js"></script>
+</body>
+</html>

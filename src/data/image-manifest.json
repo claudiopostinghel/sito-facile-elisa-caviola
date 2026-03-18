@@ -1,0 +1,326 @@
+{
+  "images": [
+    {
+      "filename": "profile.jpeg",
+      "source": "pdf-p02-1.jpeg",
+      "description": "Foto profilo di Elisa Caviola dal portfolio PDF. Ritratto giovane donna, usabile per sezione About/Bio.",
+      "tags": ["profilo", "ritratto", "about"],
+      "project": null,
+      "usage": "about"
+    },
+    {
+      "filename": "zeitgeist-01.jpeg",
+      "source": "pdf-p04-1.jpeg",
+      "description": "Natura morta fotografica dal progetto Zeitgeist — rappresentazione artistica delle dipendenze (droga). Oggetti disposti su sfondo scuro, stile still life drammatico.",
+      "tags": ["fotografia", "still-life", "zeitgeist", "dark", "artistico"],
+      "project": "zeitgeist",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "zeitgeist-02.jpeg",
+      "source": "pdf-p04-3.jpeg",
+      "description": "Natura morta fotografica dal progetto Zeitgeist — rappresentazione artistica delle dipendenze (alcol). Composizione chiaroscurale con oggetti su sfondo scuro.",
+      "tags": ["fotografia", "still-life", "zeitgeist", "dark", "artistico"],
+      "project": "zeitgeist",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "zeitgeist-03.jpeg",
+      "source": "pdf-p04-4.jpeg",
+      "description": "Natura morta fotografica dal progetto Zeitgeist — rappresentazione artistica delle dipendenze (gioco d'azzardo). Still life con illuminazione drammatica.",
+      "tags": ["fotografia", "still-life", "zeitgeist", "dark", "artistico"],
+      "project": "zeitgeist",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "infusion-01.jpeg",
+      "source": "pdf-p06-1.jpeg",
+      "description": "Ispirazione e moodboard per il progetto IN-fusion — packaging infusi alla malva. Tavola di riferimento con colori e texture.",
+      "tags": ["packaging", "moodboard", "infusion", "ispirazione"],
+      "project": "infusion",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "infusion-02.jpeg",
+      "source": "pdf-p08-1.jpeg",
+      "description": "Dettaglio design packaging IN-fusion — etichetta/grafica del prodotto infuso alla malva. Visual con fiori di malva e tipografia.",
+      "tags": ["packaging", "dettaglio", "infusion", "grafica"],
+      "project": "infusion",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "infusion-mockup.jpeg",
+      "source": "pdf-p11-1.jpeg",
+      "description": "Mockup 3D del packaging IN-fusion — confezione quadrata per infuso, vista prospettica realistica. Mostra il design applicato al prodotto finito.",
+      "tags": ["packaging", "mockup", "infusion", "3d", "prodotto-finito"],
+      "project": "infusion",
+      "usage": "portfolio-hero"
+    },
+    {
+      "filename": "african-spirit-mango.png",
+      "source": "pdf-p13-1.png",
+      "description": "Packaging cioccolato African Spirit variante Mango 70%. Design con pattern tribale africano, palette calda arancione/oro. Carta Fedrigoni Constellation Snow.",
+      "tags": ["packaging", "cioccolato", "african-spirit", "mango", "pattern", "tribale"],
+      "project": "african-spirit",
+      "usage": "portfolio-hero"
+    },
+    {
+      "filename": "african-spirit-fondente.png",
+      "source": "pdf-p14-1.png",
+      "description": "Packaging cioccolato African Spirit variante Fondente 90%. Design con pattern tribale, palette scura marrone/nero. Carta Fedrigoni.",
+      "tags": ["packaging", "cioccolato", "african-spirit", "fondente", "dark", "pattern"],
+      "project": "african-spirit",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "african-spirit-papaya.png",
+      "source": "pdf-p15-1.png",
+      "description": "Packaging cioccolato African Spirit variante Papaya 70%. Design con pattern tribale, palette verde/tropicale. Carta Fedrigoni.",
+      "tags": ["packaging", "cioccolato", "african-spirit", "papaya", "tropicale"],
+      "project": "african-spirit",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "african-spirit-mockup-01.jpeg",
+      "source": "pdf-p17-1.jpeg",
+      "description": "Mockup fotografico delle 3 varianti African Spirit affiancate. Vista frontale dei packaging cioccolato in contesto realistico.",
+      "tags": ["packaging", "mockup", "african-spirit", "gruppo", "presentazione"],
+      "project": "african-spirit",
+      "usage": "portfolio-servizi"
+    },
+    {
+      "filename": "african-spirit-mockup-02.jpeg",
+      "source": "pdf-p18-1.jpeg",
+      "description": "Mockup fotografico packaging African Spirit — vista angolata/ambientata con fave di cacao. Styling food photography.",
+      "tags": ["packaging", "mockup", "african-spirit", "ambientato", "food"],
+      "project": "african-spirit",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "trofeo-3d-01.jpeg",
+      "source": "pdf-p21-1.jpeg",
+      "description": "Rendering 3D del trofeo sportivo — versione metallica lucida su sfondo neutro. Modellazione in Blender.",
+      "tags": ["3d", "rendering", "blender", "trofeo", "sportivo", "metallico"],
+      "project": "trofeo-3d",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "trofeo-3d-02.jpeg",
+      "source": "pdf-p22-1.jpeg",
+      "description": "Rendering 3D del trofeo sportivo — versione alternativa o vista diversa. Modellazione in Blender con illuminazione studio.",
+      "tags": ["3d", "rendering", "blender", "trofeo", "sportivo"],
+      "project": "trofeo-3d",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "caramelle-3d.jpeg",
+      "source": "pdf-p24-1.jpeg",
+      "description": "Rendering 3D di caramelle gommose a forma di frutto con il marchio del gusto. Modellazione e animazione in Blender, stile pubblicitario colorato.",
+      "tags": ["3d", "rendering", "blender", "caramelle", "animazione", "colorato"],
+      "project": "caramelle-3d",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "monogrammi-overview.jpeg",
+      "source": "pdf-p31-1.jpeg",
+      "description": "Panoramica dei 4 monogrammi E.C. per attività diverse. Ciascuno con palette colori dedicata: studio legale, veterinario, ambientalista, architettura.",
+      "tags": ["branding", "monogramma", "logo", "iniziali", "EC", "panoramica"],
+      "project": "monogrammi",
+      "usage": "portfolio-hero-servizi"
+    },
+    {
+      "filename": "monogramma-01.jpeg",
+      "source": "pdf-p32-1.jpeg",
+      "description": "Dettaglio singolo monogramma E.C. — probabilmente versione studio legale con palette sobria/elegante.",
+      "tags": ["branding", "monogramma", "logo", "dettaglio", "elegante"],
+      "project": "monogrammi",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "monogramma-02.jpeg",
+      "source": "pdf-p33-1.jpeg",
+      "description": "Dettaglio singolo monogramma E.C. — altra variante con palette e stile differente.",
+      "tags": ["branding", "monogramma", "logo", "dettaglio"],
+      "project": "monogrammi",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "valdicembra-01.jpeg",
+      "source": "pdf-p37-1.jpeg",
+      "description": "Logotipo Strada del Vino Val di Cembra — design finale del marchio. Ispirato ai terrazzamenti viticoli trentini.",
+      "tags": ["branding", "logo", "vino", "territorio", "trentino", "val-di-cembra"],
+      "project": "val-di-cembra",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "valdicembra-mockup.jpeg",
+      "source": "pdf-p39-2.jpeg",
+      "description": "Mockup del logotipo Val di Cembra applicato — probabilmente su cartello stradale o segnaletica. Mostra l'uso pratico del marchio nel territorio.",
+      "tags": ["branding", "mockup", "segnaletica", "territorio", "val-di-cembra"],
+      "project": "val-di-cembra",
+      "usage": "portfolio-servizi"
+    },
+    {
+      "filename": "teatro-poster-01.jpeg",
+      "source": "pdf-p41-1.jpeg",
+      "description": "Poster per il Teatro Sociale di Trento — locandina spettacolo con la nuova identità visiva. Design grafico per eventi culturali.",
+      "tags": ["branding", "poster", "teatro", "culturale", "evento", "trento"],
+      "project": "teatro-sociale",
+      "usage": "portfolio-hero-servizi"
+    },
+    {
+      "filename": "teatro-banner.jpeg",
+      "source": "pdf-p43-2.jpeg",
+      "description": "Banner 600x300 per il Teatro Sociale di Trento — applicazione della brand identity su formato grande per esterni.",
+      "tags": ["branding", "banner", "teatro", "grande-formato", "esterni"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "teatro-installazione.jpeg",
+      "source": "pdf-p44-1.jpeg",
+      "description": "Installazione/stendardo per il Teatro Sociale di Trento — brand identity applicata a elemento architettonico o espositivo.",
+      "tags": ["branding", "installazione", "teatro", "spaziale", "stendardo"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "teatro-segnaletica.jpeg",
+      "source": "pdf-p46-1.jpeg",
+      "description": "Sistema di segnaletica interna del Teatro Sociale di Trento — wayfinding con la nuova identità visiva. Pannelli direzionali.",
+      "tags": ["branding", "segnaletica", "wayfinding", "teatro", "interni"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "teatro-badge.jpeg",
+      "source": "pdf-p48-1.jpeg",
+      "description": "Badge staff del Teatro Sociale di Trento — tesserino identificativo con la brand identity. Applicazione su oggetto fisico piccolo.",
+      "tags": ["branding", "badge", "staff", "teatro", "applicazione"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "african-spirit-mockup-03.jpg",
+      "source": "african_spirit_1.jpg",
+      "description": "Mockup singolo packaging African Spirit variante Fondente 90% — vista prospettica tavoletta cioccolato con maschera tribale e palette marrone/verde.",
+      "tags": ["packaging", "mockup", "african-spirit", "fondente", "singolo"],
+      "project": "african-spirit",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "african-spirit-mockup-04.jpg",
+      "source": "african_spirit_2.jpg",
+      "description": "Mockup singolo packaging African Spirit variante Papaya 70% — vista prospettica tavoletta cioccolato con maschera tribale e accento arancione.",
+      "tags": ["packaging", "mockup", "african-spirit", "papaya", "singolo"],
+      "project": "african-spirit",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "teatro-logo.jpg",
+      "source": "brand_identity_teatro_sociale_1.jpg",
+      "description": "Varianti del marchio Teatro Sociale 1819 — quattro versioni del logo (nero, rosso, bordeaux, grigio chiaro) con icona a semicerchio decorativo.",
+      "tags": ["branding", "logo", "teatro", "varianti", "marchio"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "teatro-poster-02.jpg",
+      "source": "brand_identity_teatro_sociale_2.jpg",
+      "description": "Poster promozionale Teatro Sociale 1819 — design scuro con fotografia del teatro, tipografia verde e brand identity applicata.",
+      "tags": ["branding", "poster", "teatro", "promozionale", "verde"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "teatro-colonnina.jpg",
+      "source": "brand_identity_teatro_sociale_3.jpg",
+      "description": "Colonnina promozionale / pensilina bus con poster Teatro Sociale 1819 — mockup ambientato in contesto urbano notturno.",
+      "tags": ["branding", "colonnina", "teatro", "mockup", "urbano", "esterno"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "teatro-billboard.jpg",
+      "source": "brand_identity_teatro_sociale_4.jpg",
+      "description": "Cartellone stradale Teatro Sociale 1819 — billboard grande formato con annuncio stagione 2025/2026, ambientazione notturna.",
+      "tags": ["branding", "billboard", "teatro", "grande-formato", "esterno", "stagione"],
+      "project": "teatro-sociale",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "trofeo-3d-03.jpg",
+      "source": "modellazione_trofeo_3d_1.jpg",
+      "description": "Rendering 3D trofeo sportivo ginnastica — versione colorata con base rosa, cerchio trasparente e mezzaluna azzurra. Silhouette ginnasta metallica.",
+      "tags": ["3d", "rendering", "blender", "trofeo", "sportivo", "colorato", "ginnastica"],
+      "project": "trofeo-3d",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "trofeo-3d-04.jpg",
+      "source": "modellazione_trofeo_3d_2.jpg",
+      "description": "Rendering 3D trofeo sportivo ginnastica — versione con base marmo verde, sfera rosa e mezzaluna bianca. Sfondo caldo.",
+      "tags": ["3d", "rendering", "blender", "trofeo", "sportivo", "marmo", "elegante"],
+      "project": "trofeo-3d",
+      "usage": "portfolio"
+    },
+    {
+      "filename": "caramelle-3d-02.jpg",
+      "source": "modellazione_marchio_1.jpg",
+      "description": "Rendering 3D marchio caramelle gusto Lime — scritta gommosa verde con spicchio di lime traslucido. Stile pubblicitario realistico.",
+      "tags": ["3d", "rendering", "blender", "caramelle", "lime", "verde", "gommoso"],
+      "project": "caramelle-3d",
+      "usage": "portfolio"
+    }
+  ],
+  "projects": {
+    "teatro-sociale": {
+      "cover": "teatro-poster-01.jpeg",
+      "images": ["teatro-poster-01.jpeg", "teatro-banner.jpeg", "teatro-installazione.jpeg", "teatro-segnaletica.jpeg", "teatro-badge.jpeg", "teatro-logo.jpg", "teatro-poster-02.jpg", "teatro-colonnina.jpg", "teatro-billboard.jpg"],
+      "color": "#2A2A2A",
+      "bestFor": ["hero", "servizi-comunicazione", "portfolio-cover"]
+    },
+    "african-spirit": {
+      "cover": "african-spirit-mango.png",
+      "images": ["african-spirit-mango.png", "african-spirit-fondente.png", "african-spirit-papaya.png", "african-spirit-mockup-01.jpeg", "african-spirit-mockup-02.jpeg", "african-spirit-mockup-03.jpg", "african-spirit-mockup-04.jpg"],
+      "color": "#C4603A",
+      "bestFor": ["hero", "servizi-packaging", "portfolio-cover"]
+    },
+    "zeitgeist": {
+      "cover": "zeitgeist-01.jpeg",
+      "images": ["zeitgeist-01.jpeg", "zeitgeist-02.jpeg", "zeitgeist-03.jpeg"],
+      "color": "#1A1A1A",
+      "bestFor": ["hero-dark", "portfolio-cover", "sfondo"]
+    },
+    "val-di-cembra": {
+      "cover": "valdicembra-01.jpeg",
+      "images": ["valdicembra-01.jpeg", "valdicembra-mockup.jpeg"],
+      "color": "#5A7A3A",
+      "bestFor": ["portfolio-cover", "servizi-branding", "territorio"]
+    },
+    "monogrammi": {
+      "cover": "monogrammi-overview.jpeg",
+      "images": ["monogrammi-overview.jpeg", "monogramma-01.jpeg", "monogramma-02.jpeg"],
+      "color": "#3D4F8C",
+      "bestFor": ["hero-circles", "servizi-branding", "portfolio-cover"]
+    },
+    "infusion": {
+      "cover": "infusion-mockup.jpeg",
+      "images": ["infusion-01.jpeg", "infusion-02.jpeg", "infusion-mockup.jpeg"],
+      "color": "#7B5EA7",
+      "bestFor": ["portfolio-cover", "servizi-packaging"]
+    },
+    "trofeo-3d": {
+      "cover": "trofeo-3d-01.jpeg",
+      "images": ["trofeo-3d-01.jpeg", "trofeo-3d-02.jpeg", "trofeo-3d-03.jpg", "trofeo-3d-04.jpg"],
+      "color": "#8A8A8A",
+      "bestFor": ["portfolio-cover", "competenze-3d"]
+    },
+    "caramelle-3d": {
+      "cover": "caramelle-3d.jpeg",
+      "images": ["caramelle-3d.jpeg", "caramelle-3d-02.jpg"],
+      "color": "#E94580",
+      "bestFor": ["portfolio-cover", "competenze-3d-motion"]
+    }
+  }
+}

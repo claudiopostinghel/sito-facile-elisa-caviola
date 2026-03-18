@@ -1,0 +1,208 @@
+---
+import { business } from '../../data/business.js';
+---
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet" />
+
+<section class="processo" id="processo">
+  <div class="container">
+    <div class="section-header reveal">
+      <span class="label-tag">Processo</span>
+      <h2 class="section-title">Come lavoro</h2>
+      <p class="section-subtitle">Quattro fasi, dalla materia grezza al prodotto finito.</p>
+    </div>
+
+    <div class="steps" data-stagger>
+      {business.processo.map((p, i) => (
+        <article class="step-card reveal">
+          <div class="step-top">
+            <span class="step-number">{p.step}</span>
+            <h3 class="step-title">{p.titolo}</h3>
+          </div>
+          <p class="step-desc">{p.desc}</p>
+          {i < business.processo.length - 1 && <div class="step-connector" aria-hidden="true"></div>}
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .processo {
+    --surface: #FDFCFE;
+    --surface-alt: #F6F2FA;
+    --primary-500: #6D3B7E;
+    --primary-600: #5A2E68;
+    --primary-900: #2A1538;
+    --neutral-600: #7A6B85;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-body: 'Karla', system-ui, sans-serif;
+    --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+    background: var(--surface);
+    padding: 7rem 2.5rem;
+  }
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .label-tag {
+    display: inline-block;
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--primary-500);
+    background: rgba(109, 59, 126, 0.08);
+    padding: 0.35rem 1rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+  }
+
+  .section-title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--primary-500);
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+
+  .section-subtitle {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    color: var(--neutral-600);
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .step-card {
+    position: relative;
+    background: var(--surface-alt);
+    padding: 2.5rem 2rem 2rem;
+    text-align: center;
+    transition: transform 0.5s var(--ease-bounce), box-shadow 0.4s ease;
+    border-radius: 0;
+  }
+
+  .step-card:first-child {
+    border-radius: 12px 0 0 12px;
+  }
+
+  .step-card:last-child {
+    border-radius: 0 12px 12px 0;
+  }
+
+  .step-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 36px rgba(42, 21, 56, 0.1);
+    z-index: 2;
+    border-radius: 12px;
+  }
+
+  .step-top {
+    margin-bottom: 1rem;
+  }
+
+  .step-number {
+    display: block;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 2.5rem;
+    color: var(--primary-500);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    opacity: 0.7;
+  }
+
+  .step-title {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: var(--primary-500);
+  }
+
+  .step-desc {
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    color: var(--neutral-600);
+  }
+
+  .step-connector {
+    position: absolute;
+    top: 50%;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: var(--primary-500);
+    opacity: 0.2;
+    transform: translateY(-50%);
+    z-index: 3;
+  }
+
+  @media (max-width: 900px) {
+    .processo {
+      padding: 5rem 1.25rem;
+    }
+
+    .steps {
+      grid-template-columns: 1fr;
+      gap: 0;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      display: flex;
+      padding-bottom: 1rem;
+    }
+
+    .step-card {
+      min-width: 260px;
+      flex-shrink: 0;
+      scroll-snap-align: start;
+      border-radius: 12px;
+    }
+
+    .step-card:first-child,
+    .step-card:last-child {
+      border-radius: 12px;
+    }
+
+    .step-connector {
+      display: none;
+    }
+  }
+
+  @media (min-width: 901px) and (max-width: 1100px) {
+    .steps {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .step-card {
+      border-radius: 12px;
+    }
+
+    .step-card:first-child,
+    .step-card:last-child {
+      border-radius: 12px;
+    }
+
+    .step-connector {
+      display: none;
+    }
+  }
+</style>
